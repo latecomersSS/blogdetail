@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Webpage</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom CSS */
+      body {
+        background-color: #1a1a1a;
+        color: white;
+      }
+      .navbar {
+        background-color: #1a1a1a;
+      }
+      img {
+        height: 50px;
+      }
+      footer {
+        background-color: #343a40;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #1a1a1a;
+        padding: 20px;
+        text-align: left; /* Căn trái */
+        position: fixed;
+        height: 100px;
+        bottom: 0;
+        width: 100%;
+        display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+        justify-content: space-between; /* Căn các phần tử con từ bên trái đến bên phải */
+        align-items: center; /* Căn giữa theo chiều dọc */
+      }
+
+      .parent1 {
+        margin-right: auto; /* Đẩy phần tử này về bên trái */
+      }
+
+      .youtube2,
+      .youtube2 + a {
+        margin-left: 20px; /* Khoảng cách giữa các liên kết */
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./public/ellipse-2@2x.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Editor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <!-- Your content goes here -->
+      <h1>Content</h1>
+      <p>This is where your content will be displayed.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom">
+      <!-- Footer content -->
+      <div class="container">
+        <div class="parent1">
+          <a class="youtube2">© 2023</a>
+          <a class="youtube2" href="https://youtube.com">Youtube</a>
+          <a class="youtube2">Instagram</a>
+          <a class="youtube2">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

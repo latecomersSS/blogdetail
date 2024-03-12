@@ -1,0 +1,40 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+.navbar {
+  background-color: #1a1a1a;
+}
+img {
+  height: 50px;
+}
+
+footer {
+  background-color: #343a40;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: left; /* Căn trái */
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+  justify-content: space-between; /* Căn các phần tử con từ bên trái đến bên phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.parent1 {
+  margin-right: auto; /* Đẩy phần tử này về bên trái */
+}
+
+.youtube2,
+.youtube2 + a {
+  margin-left: 20px; /* Khoảng cách giữa các liên kết */
+  text-decoration: none;
+  color: white;
+}
