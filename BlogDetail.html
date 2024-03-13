@@ -4,25 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+
     <!-- Include Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <style>
-      /* Custom CSS */
       body {
         background-color: #1a1a1a;
         color: white;
       }
       .navbar {
         background-color: #1a1a1a;
+        height: 70px;
       }
-      img {
-        height: 50px;
+      .iconImg {
+        height: 60px;
+      }
+      .content2,
+      .content3 {
+        width: 90%;
+      }
+      .paragraph {
+        margin-top: 3rem;
+      }
+      .description {
+        padding-left: 4.5em;
+      }
+      .font-family {
+        font-family: "Courier New", Courier, monospace;
+      }
+      /*Blog card*/
+      hr {
+        color: white;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+      }
+      .blogCard,
+      .card-body,
+      .card,
+      .card-deck {
+        background-color: #1a1a1a;
+      }
+      .text-reset {
+        color: rgb(98, 35, 98); /* Đổi màu tùy ý */
       }
       footer {
-        background-color: #343a40;
+        background-color: #1a1a1a;
         padding: 20px 0;
         text-align: center;
       }
@@ -31,7 +65,6 @@
         background-color: #1a1a1a;
         padding: 20px;
         text-align: left; /* Căn trái */
-        position: fixed;
         height: 100px;
         bottom: 0;
         width: 100%;
@@ -54,10 +87,10 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top sticky-sm-top">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="./public/ellipse-2@2x.png"
+          ><img class="iconImg" src="./public/ellipse-2@2x.png"
         /></a>
         <button
           class="navbar-toggler"
@@ -91,16 +124,75 @@
         </div>
       </div>
     </nav>
-
-    <!-- Main Content -->
-    <div class="container mt-5">
+    <!-- Main content -->
+    <div class="container mt-5 mb-5">
       <!-- Your content goes here -->
-      <h1>Content</h1>
-      <p>This is where your content will be displayed.</p>
-    </div>
+      <img
+        src="./public/cover-image@2x.png"
+        alt="cover-image"
+        class="img-fluid"
+      />
+      <div class="paragraph">
+        <h1 class="fs-3">Lorem ipsum dolor sit amet consectetur</h1>
+        <p class="author fw-light fs-6">Published At: - Author</p>
 
-    <!-- Footer -->
-    <footer class="fixed-bottom">
+        <p class="fs-3 font-family">
+          Lorem ipsum dolor sit amet consectetur. Arcu auctor ac viverra sodales
+          rhoncus eget sit. Aliquet amet adipiscing fermentum eu egestas
+          malesuada. Molestie sed elementum ornare et arcu nullam laoreet
+          platea. Parturient sed sit feugiat congue sed amet. Eget non sed augue
+          sit in nibh quam massa. Et ante in nunc condimentum eleifend ac.
+          Accumsan duis tellus urna et nulla dis amet eu elementum. Tortor
+          posuere fames auctor scelerisque tristique. Fringilla ullamcorper sit
+          etiam enim turpis orci pharetra diam. Diam accumsan dignissim facilisi
+          eu egestas ullamcorper gravida augue. Tempus enim morbi id in
+          pharetra.
+        </p>
+      </div>
+      <!-- Second Content -->
+
+      <div class="container mt-5 content2">
+        <img src="./public/img1@2x.png" alt="second-image" class="img-fluid" />
+      </div>
+      <p class="description"><em>Lorem ipsum dolor sit amet consectetur</em></p>
+      <div class="paragraph">
+        <p class="fs-3 font-family">
+          Lorem ipsum dolor sit amet consectetur. Arcu auctor ac viverra sodales
+          rhoncus eget sit. Aliquet amet adipiscing fermentum eu egestas
+          malesuada. Molestie sed elementum ornare et arcu nullam laoreet
+          platea. Parturient sed sit feugiat congue sed amet. Eget non sed augue
+          sit in nibh quam massa. Et ante in nunc condimentum eleifend ac.
+          Accumsan duis tellus urna et nulla dis amet eu elementum. Tortor
+          posuere fames auctor scelerisque tristique. Fringilla ullamcorper sit
+          etiam enim turpis orci pharetra diam. Diam accumsan dignissim facilisi
+          eu egestas ullamcorper gravida augue. Tempus enim morbi id in
+          pharetra.
+        </p>
+      </div>
+
+      <!-- Third Content -->
+
+      <div class="container mt-5 content3">
+        <img src="./public/img@2x.png" alt="third-image" class="img-fluid" />
+      </div>
+      <p class="description"><em>Lorem ipsum dolor sit amet consectetur</em></p>
+      <div class="paragraph">
+        <p class="fs-3 font-family">
+          Lorem ipsum dolor sit amet consectetur. Arcu auctor ac viverra sodales
+          rhoncus eget sit. Aliquet amet adipiscing fermentum eu egestas
+          malesuada. Molestie sed elementum ornare et arcu nullam laoreet
+          platea. Parturient sed sit feugiat congue sed amet. Eget non sed augue
+          sit in nibh quam massa. Et ante in nunc condimentum eleifend ac.
+          Accumsan duis tellus urna et nulla dis amet eu elementum. Tortor
+          posuere fames auctor scelerisque tristique. Fringilla ullamcorper sit
+          etiam enim turpis orci pharetra diam. Diam accumsan dignissim facilisi
+          eu egestas ullamcorper gravida augue. Tempus enim morbi id in
+          pharetra.
+        </p>
+      </div>
+    </div>
+    </div>
+    <footer>
       <!-- Footer content -->
       <div class="container">
         <div class="parent1">
