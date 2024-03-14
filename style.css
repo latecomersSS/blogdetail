@@ -5,12 +5,53 @@ body {
 .navbar {
   background-color: #1a1a1a;
 }
-img {
-  height: 50px;
+.iconImg {
+  height: 70px;
 }
 
+.content-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 50px;
+}
+.content-section img {
+  max-width: 100%;
+  height: auto;
+}
+.content2,
+.content3 {
+  width: 90%;
+}
+.paragraph {
+  margin-top: 3rem;
+}
+.description {
+  padding-left: 4.5em;
+}
+.font-family {
+  font-family: "Courier New", Courier, monospace;
+}
+/*Blog card*/
+hr {
+  color: white;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+.blogCard,
+.card-body,
+.card,
+.card-deck {
+  background-color: #1a1a1a;
+}
+.text-reset {
+  color: rgb(98, 35, 98); /* Đổi màu tùy ý */
+}
 footer {
-  background-color: #343a40;
+  background-color: #1a1a1a;
   padding: 20px 0;
   text-align: center;
 }
@@ -19,7 +60,6 @@ footer {
   background-color: #1a1a1a;
   padding: 20px;
   text-align: left; /* Căn trái */
-  position: fixed;
   height: 100px;
   bottom: 0;
   width: 100%;
